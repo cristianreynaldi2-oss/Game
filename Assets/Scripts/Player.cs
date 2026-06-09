@@ -89,4 +89,12 @@ public class Player : Character
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, 1.5f);
     }
+
+    public void RestoreFullHealth()
+    {
+        // Karena variabel 'health' dan 'maxHealth' di class Character bersifat 'protected',
+        // kelas turunannya (Player) bisa langsung mengakses dan mengubah nilainya.
+        health = maxHealth; 
+        Debug.Log($"HP Player dipulihkan sepenuhnya! HP: {health}/{maxHealth}");
+    }
 }
