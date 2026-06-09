@@ -1,5 +1,14 @@
 # RPG Game - Final Project PBO
 
+## Update Versi 2.0
+
+Version 2.0 Update
+
+Pada versi 2.0
+Ditambahkan karakter baru bernama SwordMaster yang merupakan turunan dari class Melee. SwordMaster memiliki atribut unik ThrowSwordDamage dan mengimplementasikan polymorphism melalui override method Attack().
+
+Selain itu ditambahkan EnemyManager yang menggunakan List<Enemy> untuk menyimpan berbagai jenis musuh dalam satu collection serta fitur sorting berdasarkan Health. Sistem juga dilengkapi dengan Custom Exception untuk memvalidasi nilai damage agar tidak bernilai negatif.
+
 ## Deskripsi
 
 RPG Game merupakan game sederhana berbasis Unity dan C# yang dibuat untuk memenuhi tugas Final Project Pemrograman Berorientasi Objek (PBO). Game mengimplementasikan konsep Object-Oriented Programming seperti Encapsulation, Inheritance, Abstraction, Polymorphism, dan Interface.
@@ -76,11 +85,3 @@ Implementasi UI dan Validasi Sistem.
 Cristian Reynaldi
 
 Testing, Code Review, Refactoring Recommendation, dan Dokumentasi Repository.
-
-#Update Versi 2.0
-Version 2.0 Update
-
-Pada versi 2.0
-Ditambahkan karakter baru bernama SwordMaster yang merupakan turunan dari class Melee. SwordMaster memiliki atribut unik ThrowSwordDamage dan mengimplementasikan polymorphism melalui override method Attack().
-
-Selain itu ditambahkan EnemyManager yang menggunakan List<Enemy> untuk menyimpan berbagai jenis musuh dalam satu collection serta fitur sorting berdasarkan Health. Sistem juga dilengkapi dengan Custom Exception untuk memvalidasi nilai damage agar tidak bernilai negatif.
