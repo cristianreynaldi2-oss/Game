@@ -8,13 +8,13 @@ RPG Game merupakan game sederhana berbasis Unity dan C# yang dibuat untuk memenu
 
 ### Software
 
-* Unity
-* Visual Studio / Visual Studio Code
-* Git
+- Unity
+- Visual Studio / Visual Studio Code
+- Git
 
 ### Bahasa Pemrograman
 
-* C#
+- C#
 
 ## Cara Menjalankan
 
@@ -22,11 +22,10 @@ RPG Game merupakan game sederhana berbasis Unity dan C# yang dibuat untuk memenu
 2. Buka scene utama permainan.
 3. Tekan tombol Play pada Unity Editor.
 4. Gunakan tombol:
-
-   * W = Bergerak ke atas
-   * A = Bergerak ke kiri
-   * S = Bergerak ke bawah
-   * D = Bergerak ke kanan
+   - W = Bergerak ke atas
+   - A = Bergerak ke kiri
+   - S = Bergerak ke bawah
+   - D = Bergerak ke kanan
 
 ## Cara Menjalankan Test
 
@@ -34,23 +33,23 @@ RPG Game merupakan game sederhana berbasis Unity dan C# yang dibuat untuk memenu
 
 Lakukan pengujian berdasarkan skenario berikut:
 
-* TS01 - Player bergerak ke kanan
-* TS02 - Player bergerak ke kiri
-* TS03 - Player bergerak ke atas
-* TS04 - Player bergerak ke bawah
-* TS05 - Flip Character
-* TS06 - Enemy Chase
-* TS07 - Enemy Idle
-* TS08 - Enemy Attack
-* TS09 - Health Reduction
-* TS10 - Health Regeneration
-* TS11 - Knockback
-* TS12 - Knockback Recovery
+- TS01 - Player bergerak ke kanan
+- TS02 - Player bergerak ke kiri
+- TS03 - Player bergerak ke atas
+- TS04 - Player bergerak ke bawah
+- TS05 - Flip Character
+- TS06 - Enemy Chase
+- TS07 - Enemy Idle
+- TS08 - Enemy Attack
+- TS09 - Health Reduction
+- TS10 - Health Regeneration
+- TS11 - Knockback
+- TS12 - Knockback Recovery
 
 ### Hasil Pengujian
 
-* Pass : 11
-* Fail : 1
+- Pass : 11
+- Fail : 1
 
 ## Contributor
 
@@ -77,3 +76,11 @@ Implementasi UI dan Validasi Sistem.
 Cristian Reynaldi
 
 Testing, Code Review, Refactoring Recommendation, dan Dokumentasi Repository.
+
+#Update Versi 2.0
+Version 2.0 Update
+
+Pada versi 2.0
+Ditambahkan karakter baru bernama SwordMaster yang merupakan turunan dari class Melee. SwordMaster memiliki atribut unik ThrowSwordDamage dan mengimplementasikan polymorphism melalui override method Attack().
+
+Selain itu ditambahkan EnemyManager yang menggunakan List<Enemy> untuk menyimpan berbagai jenis musuh dalam satu collection serta fitur sorting berdasarkan Health. Sistem juga dilengkapi dengan Custom Exception untuk memvalidasi nilai damage agar tidak bernilai negatif.
